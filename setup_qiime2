@@ -31,10 +31,10 @@ if len(sys.argv) == 2:
 else:
     version = "2020.2"
 
-if float(version) < 2010.10:
+if float(version) < 2021.8:
     pyver = "36"
 else:
-    pyver = "38"
+    pyver = "36"
 
 QIIME_YAML_URL = QIIME_YAML_TEMPLATE.format(version=version, python=pyver)
 QIIME_YAML = os.path.basename(QIIME_YAML_URL)
