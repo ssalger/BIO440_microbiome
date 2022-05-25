@@ -29,9 +29,9 @@ QIIME_YAML_TEMPLATE = (
 if len(sys.argv) == 2:
     version = sys.argv
 else:
-    version = "2022.2"
+    version = "2020.2"
 
-if float(version) < 2021.8:
+if float(version) < 2010.10:
     pyver = "36"
 else:
     pyver = "38"
